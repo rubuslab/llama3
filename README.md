@@ -1,3 +1,32 @@
+//------------------[By Wookin]-------------------------------------------------------------------
+Windows下怎么从Huggingface下载模型
+--------------------------------------------------------
+Step 1: 安装Python312
+        安装过程选择安装上pip
+
+Step 2：安装huggingface_hub
+pip install -U huggingface_hub
+https://blog.csdn.net/xiaoh_7/article/details/138244725
+
+step 3: 在Huggingface注册账号
+https://huggingface.co/settings/account
+
+Step 4：激活自己huggingface账号后创建一个token
+
+step 5：申请模型访问权限
+https://huggingface.co/meta-llama/Meta-Llama-3.1-405B
+// 点击 Expand to review and access申请访问，我写的Chile的学生
+
+Step 6：等待批准
+在这个地方查看你的申请被批准没有 https://huggingface.co/settings/gated-repos
+
+Step 7：git clone下载模型
+git clone https://<hf_username>:<hf_token>@huggingface.co/meta-llama/Meta-Llama-3.1-405B
+把参数换成你的账号id和token，就可以下载了。比如我的是：
+git clone https://Wookin:--token部分内容--@huggingface.co/meta-llama/Meta-Llama-3.1-405B
+https://www.jianshu.com/p/86c4a45f0a18
+//------------------------------------------------------------------------------------------------
+
 <p align="center">
   <img src="https://github.com/meta-llama/llama3/blob/main/Llama3_Repo.jpeg" width="400"/>
 </p>
